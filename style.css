@@ -43,7 +43,13 @@ header nav ul li a:active{
     position: absolute;
     top: 50%;
     left: 50%;
+    /* Altrimenti le dimensioni sono definiti dagli spostamenti */
+    width: 50%;
     transform: translate(-50%, -50%);
+}
+.model-conteiner img{
+    /* Non lasciare il controllo alle immagini  */
+    width: 100%;
 }
 #model-1{
     background-color: brown;
@@ -58,6 +64,7 @@ header nav ul li a:active{
     color: darkolivegreen
 }
 .best-model div p{
+    /* Nella correzione niente br ma il fontsize impostato con vh */
     font-size: 50px;
     font-weight: bold;
     text-transform: uppercase;
